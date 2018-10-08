@@ -80,7 +80,7 @@ client.on('guildMemberAdd', member => {
         .setColor('DARK BLUE')
         .setThumbnail(avatar)
         .addField('Novo integrande da equipe!', `Seja bem vindo(a), ${member} à equipe do Snow.\n Agora você é oficialmente um de nós. `)
-        .setFooter(`© HighMC`);
+        .setFooter(`© RedeSnow`);
         client.channels.get('497789408360267779').send(embed);
   })
 
