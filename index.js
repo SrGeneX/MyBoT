@@ -66,7 +66,7 @@ client.on('message', (message) => {
                 .setTitle(`:loudspeaker: | RedeSnow - Anúncio`)
                 .setDescription(args1[0])
                 .addField('Atenciosamente,', message.author.username)
-                .setColor('RED')
+                .setColor('1E90FF')
     
         client.channels.get('497789408360267779').send({embed});
         }
@@ -77,11 +77,11 @@ client.on('guildMemberAdd', member => {
     let avatar = member.user.avatarURL
   
     let embed = new Discord.RichEmbed()
-        .setColor('DARK BLUE')
+        .setColor('1E90FF')
         .setThumbnail(avatar)
         .addField('Novo integrande da equipe!', `Seja bem vindo(a), ${member} à equipe do Snow.\n Agora você é oficialmente um de nós. `)
         .setFooter(`© RedeSnow`);
-        client.channels.get('497789408360267779').send(embed);
+        client.channels.get('496040246769614848').send(embed);
   })
 
   client.login(process.env.token);; 
