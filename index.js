@@ -57,7 +57,7 @@ client.on('message', (message) => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
    
        if(msg.startsWith(prefix + 'AVISO')){
-	    if(!message.member.roles.find("name", 'Teste')) return message.channel.sendMessage(":x: | Você não possui permissão").then(msg => {
+	    if(!message.member.roles.find("name", 'Equipe')) return message.channel.sendMessage(":x: | Você não possui permissão").then(msg => {
              msg.delete(10000)
 	    })
             let args1 = message.content.slice(prefix.length + 5).split(";");
